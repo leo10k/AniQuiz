@@ -13,6 +13,8 @@
 		8D6E24E62B1E52180009F485 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D6E24E42B1E52180009F485 /* Main.storyboard */; };
 		8D6E24E82B1E521A0009F485 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D6E24E72B1E521A0009F485 /* Assets.xcassets */; };
 		8D6E24EB2B1E521A0009F485 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D6E24E92B1E521A0009F485 /* LaunchScreen.storyboard */; };
+		8D6E24F52B1E54FA0009F485 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6E24F42B1E54FA0009F485 /* Questions.swift */; };
+		8D6E24F72B1E553F0009F485 /* QuestionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6E24F62B1E553F0009F485 /* QuestionsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		8D6E24E72B1E521A0009F485 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D6E24EA2B1E521A0009F485 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D6E24EC2B1E521A0009F485 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D6E24F42B1E54FA0009F485 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		8D6E24F62B1E553F0009F485 /* QuestionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,33 @@
 		8D6E24DD2B1E52180009F485 /* AniQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				8D6E24F32B1E54E50009F485 /* Model */,
+				8D6E24F22B1E54BD0009F485 /* ViewController */,
 				8D6E24DE2B1E52180009F485 /* AppDelegate.swift */,
 				8D6E24E02B1E52180009F485 /* SceneDelegate.swift */,
-				8D6E24E22B1E52180009F485 /* ViewController.swift */,
 				8D6E24E42B1E52180009F485 /* Main.storyboard */,
 				8D6E24E72B1E521A0009F485 /* Assets.xcassets */,
 				8D6E24E92B1E521A0009F485 /* LaunchScreen.storyboard */,
 				8D6E24EC2B1E521A0009F485 /* Info.plist */,
 			);
 			path = AniQuiz;
+			sourceTree = "<group>";
+		};
+		8D6E24F22B1E54BD0009F485 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8D6E24E22B1E52180009F485 /* ViewController.swift */,
+				8D6E24F62B1E553F0009F485 /* QuestionsVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8D6E24F32B1E54E50009F485 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8D6E24F42B1E54FA0009F485 /* Questions.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +161,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D6E24E32B1E52180009F485 /* ViewController.swift in Sources */,
+				8D6E24F72B1E553F0009F485 /* QuestionsVC.swift in Sources */,
+				8D6E24F52B1E54FA0009F485 /* Questions.swift in Sources */,
 				8D6E24DF2B1E52180009F485 /* AppDelegate.swift in Sources */,
 				8D6E24E12B1E52180009F485 /* SceneDelegate.swift in Sources */,
 			);
