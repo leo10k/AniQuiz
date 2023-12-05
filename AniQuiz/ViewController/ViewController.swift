@@ -9,10 +9,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
     @IBOutlet weak var startQuizButton: UIButton!
     
-    @IBAction func pressedButton(_ sender: Any) {
-        print("The button has been pressed!")
+    @IBAction func startQuizButtonAction(_ sender: Any) {
+        print("Button pressed!")
     }
     
     override func viewDidLoad() {
