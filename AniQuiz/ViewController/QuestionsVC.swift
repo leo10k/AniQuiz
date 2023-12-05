@@ -34,12 +34,13 @@ class QuestionsVC: UIViewController {
         if questionNumber < questions.count - 1 {
             questionNumber += 1
             Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(questionsConfig), userInfo: nil, repeats: false)
+        } else {
+            perfomaceScreenNav()
         }
     }
     
-    
     func perfomaceScreenNav() {
-        
+        performSegue(withIdentifier: "goToPerfomace", sender: nil)
     }
     
     override func viewDidLoad() {
@@ -65,15 +66,8 @@ class QuestionsVC: UIViewController {
         }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        guard let perfomaceVC = segue.destination as? PerfomaceVC else { return }
+        perfomaceVC.points = points
     }
-    */
-
 }
