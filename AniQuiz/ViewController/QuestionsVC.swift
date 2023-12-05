@@ -10,7 +10,7 @@ import UIKit
 extension UIColor {
     static var greenBackgorund = UIColor(red: 11/255, green: 161/255, blue: 53/255, alpha: 1.0)
     static var redBackgorund = UIColor(red: 211/255, green: 17/255, blue: 17/255, alpha: 1.0)
-    static var buttonDefault = UIColor(red: 116/255, green: 50/255, blue: 255/255, alpha: 1.0)
+    static var buttonDefault = UIColor(red: 23/255, green: 107/255, blue: 135/255, alpha: 1.0)
 }
 
 class QuestionsVC: UIViewController {
